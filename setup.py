@@ -6,7 +6,7 @@ setup(
     name='django-collapse-whitespace-templatetag',
 
     url="https://chris-lamb.co.uk/projects/django-collapse-whitespace-templatetag",
-    version='1.0.0',
+    version='1.0.1',
     description="Simple template tag for Django to collapse whitespace",
 
     author="Chris Lamb",
