@@ -35,6 +35,6 @@ class CollapseNewlinesNode(template.Node):
         self.childnodes = childnodes
 
     def render(self, context):
-        return u'\n'.join(
-            x for x in normalize_newlines(val).splitlines(False) if x
-        )
+        val = normalize_newlines(self.childnodes.render(context))
+
+        return u'\n'.join(x for x in val.splitlines(False) if x)
